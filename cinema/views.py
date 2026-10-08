@@ -1,5 +1,3 @@
-from django.views import generic
-from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status, generics, mixins, viewsets
 
@@ -10,7 +8,8 @@ from cinema.models import Movie, Genre, Actor, CinemaHall
 from cinema.serializers import (
     MovieSerializer,
     GenreSerializer,
-    ActorSerializer, CinemaHallSerializer,
+    ActorSerializer,
+    CinemaHallSerializer,
 )
 
 
